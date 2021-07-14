@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}/*reset margin padding on everything*/
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 25px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    color: rgb(123, 124, 199);
+}
+.nav-list li a i{
+    padding-right: 5px;
+}
+.right-nav{
+    width: 30%;
+    text-align: right;
+    padding: 0px 5px;
+}
+#search{
+    padding: 4px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../images/electronics-bg.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    max-width: 60%;
+    margin: auto;
+    height: 75%;
+}
+.first-section{
+    height: 100vh;
+}
+.first-half{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.second-half{
+    width: 22%;
+}
+.second-half img{
+    width: 240px;
+    border: 4px solid white;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.text-big{
+    font-size: 28px;
+}
+.text-small{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+.btn:hover{
+    border: 2px solid rgb(123, 124, 199);
+}
+.btn-sm{
+    padding: 5px 8px;
+    vertical-align: middle;
+}
+
+.section{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.thumbnail img{
+    width: 260px;
+}
+.text-section{
+    padding: 0 90px 0 0;
+}
+.text-section-left{
+    padding: 0 0 0 100px;
+}
+.contact-section{
+    background-color: rgb(230, 226, 226);
+    height: 65vh;
+}
+.text-style{
+    padding-top: 10px;
+    text-align: center;
+}
+.contact-form{
+    max-width: 1000px;
+    margin:auto;
+}
+.input-style{
+    margin: 10px 0;
+    padding: 4px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    width: 100%;
+}
+.btn-dark-lg{
+    color: rgb(34, 32, 32);
+    border-color: rgb(34, 32, 32);
+    width: 100%;
+}
+.copyright{
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    color: cornsilk;
+}
+.footer-style{
+    text-align: center;
+    color: cornsilk;
+    padding: 10px;
+}
+.burger-menu{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    top: 16px;
+}
+.burger-line{
+    width: 32px;
+    background-color: cornsilk;
+    height: 4px;
+    margin: 5px 4px;
+}
+
+/*upto width 1219px apply below styles*/
+@media only screen and (max-width: 1219px){
+
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 450px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .right-nav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .nav-height-responsive{
+        height: 66px;
+    }
+    .visibility-class-responsive{
+        opacity: 0;
+    }
+    .main-box{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .second-half{
+        padding-top: 100px;
+        width: 100%;
+    }
+    .second-half img{
+        width: 250px;
+    }
+}
